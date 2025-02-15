@@ -14,10 +14,13 @@ export default function Home() {
   const pageData = useFetchPageData(language);
 
   if (!pageData) return <p>Loading...</p>;
+  console.log("Current language:", language);
+console.log("Fetched pageData:", pageData);
+console.log("Bloc3 data before render:", pageData?.bloc_3);
+
 
   return (
     <div className="flex flex-col items-center">
-      {/* Component head_menu */}
       <HeaderMenu
         menuItems={pageData.head_menu}
         onLanguageChange={setLanguage}

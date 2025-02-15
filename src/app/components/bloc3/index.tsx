@@ -18,15 +18,16 @@ interface Props {
 
 export default function Bloc3({ bloc_3 }: Props) {
   const images = [bloc_3_img1, bloc_3_img2, bloc_3_img3, bloc_3_img4];
+
   return (
     <div className="py-10 px-5 max-w-6xl mx-auto">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-3xl font-bold text-orange-600">{bloc_3.title}</h2>
         <a
-          href="/more-info"
+          href="#"
           className="text-[#666666] hover:text-orange-500 text-sm flex items-center"
         >
-          {bloc_3.more_info} <span className="ml-1">→</span>
+          {bloc_3.more_info || "More Info"} <span className="ml-1">→</span>
         </a>
       </div>
 

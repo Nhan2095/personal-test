@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ArrowUpRight from "@/assets/images/ArrowUpRight.svg";
 // Define types for button props
 interface ButtonProps {
@@ -8,10 +8,9 @@ interface ButtonProps {
   size?: 'small' | 'medium' | 'large';
 }
 
-const Button: React.FC<ButtonProps> = ({ text, onClick, color = '#F2542D', size = 'medium' }) => {
+const Button: React.FC<ButtonProps> = ({ text, onClick, size = 'medium' }) => {
   // Define state for hover effect
-  const [isHovered, setIsHovered] = useState(false);
-
+  
   // Define base button styles
   const baseStyles: React.CSSProperties = {
     padding: size === 'large' ? '12px 24px' : size === 'small' ? '6px 12px' : '8px 16px',
@@ -24,21 +23,11 @@ const Button: React.FC<ButtonProps> = ({ text, onClick, color = '#F2542D', size 
 
   };
 
-  // Hover event handlers
-  const handleMouseEnter = () => {
-    setIsHovered(true); // Set hover state
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false); // Reset hover state
-  };
 
   return (
     <button
       style={baseStyles}
       onClick={onClick}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
       className='flex gap-2 items-center'
     >
       {text}

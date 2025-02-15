@@ -24,6 +24,7 @@ type DataStructure = {
       tagline: string;
     }[];
     title: string;
+    more_info: string;
   };
   bloc_4: {
     pictos: {
