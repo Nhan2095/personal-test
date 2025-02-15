@@ -2,7 +2,6 @@ import Image from "next/image";
 import bloc2_icon1 from "@/assets/images/bloc2_icon1.png";
 import bloc2_icon2 from "@/assets/images/bloc2_icon2.png";
 import bloc2_icon3 from "@/assets/images/bloc2_icon3.png";
-import map from "@/assets/images/map.png";
 interface Props {
   bloc_2: {
     title: string;

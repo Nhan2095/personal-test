@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Image from "next/image";
 import ArrowUpRight from "@/assets/images/ArrowUpRight.svg";
 // Define types for button props
 interface ButtonProps {

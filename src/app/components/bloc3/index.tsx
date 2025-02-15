@@ -3,7 +3,6 @@ import bloc_3_img1 from "@/assets/images/bloc_3_img1.png";
 import bloc_3_img2 from "@/assets/images/bloc_3_img2.png";
 import bloc_3_img3 from "@/assets/images/bloc_3_img3.png";
 import bloc_3_img4 from "@/assets/images/bloc_3_img4.png";
-import styles from "./bloc3.module.css";
 
 interface Props {
   bloc_3: {
